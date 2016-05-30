@@ -1,0 +1,7 @@
+;The comment below contains SFX script commands
+Path=C:\Program Files\Webb Electronics\
+Setup="C:\Program Files\Webb Electronics\Debug\StartSetup.vbs"
+Silent=2
+Overwrite=1
+Title=Webb Report Wizard Installer
+

@@ -1,0 +1,987 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73592E27-8E09-4A0E-B2B1-9C8028BAE901}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Webb.Reports.ExControls</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Webb.Reports.ExControls</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Webb.Reports.ExControls/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v6.3">
+      <Name>DevExpress.Data.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.Data.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v6.3">
+      <Name>DevExpress.Utils.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.Utils.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v6.3">
+      <Name>DevExpress.XtraCharts.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraCharts.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v6.3.Design">
+      <Name>DevExpress.XtraCharts.v6.3.Design</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraCharts.v6.3.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v6.3.UI">
+      <Name>DevExpress.XtraCharts.v6.3.UI</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraCharts.v6.3.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v6.3">
+      <Name>DevExpress.XtraEditors.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraEditors.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v6.3">
+      <Name>DevExpress.XtraNavBar.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraNavBar.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v6.3">
+      <Name>DevExpress.XtraPrinting.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraPrinting.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v6.3">
+      <Name>DevExpress.XtraReports.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraReports.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Webb.Reports\Reports.csproj">
+      <Name>Reports</Name>
+      <Project>{C62E8739-2832-4CB1-ACEC-D9100B56093D}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Webb\Util.csproj">
+      <Name>Util</Name>
+      <Project>{4CB0299D-E4FE-4509-BBFB-2E42C426F7DE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CompactGroupingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\CalculateColumnDealer.cs" />
+    <Compile Include="Data\ChartData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\ChartSettingData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\ChartValuesData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\ColumnData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\CombinedValuedealer.cs" />
+    <Compile Include="Data\ExShapeData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\FlatChartData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\GridData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\GroupingData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\GroupResultData.cs" />
+    <Compile Include="Data\GroupSummayData.cs" />
+    <Compile Include="Data\HeadersData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\HorizontalGridColumn.cs" />
+    <Compile Include="Data\HorizontalGridData.cs" />
+    <Compile Include="Data\MaskInfoData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\MatrixData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\PlayerGradingInfo.cs" />
+    <Compile Include="Data\PlayerGradingSummary.cs" />
+    <Compile Include="Data\SectionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SplitButtons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\StaTypeData.cs" />
+    <Compile Include="Data\CResolvePathIntoImage.cs" />
+    <Compile Include="DateTimeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ChartControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ChartControlExDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\CompactGroupDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ContainerControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\CustomImageDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\DateTimeControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\Designer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\DevExpressControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ExShapeDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\FieldPanelDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\FileNameControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\GradingControlDesigner.cs" />
+    <Compile Include="Design\GridDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\GroupDesigner.cs" />
+    <Compile Include="Design\HitChartPanelDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\HorizonGroupDesigner.cs" />
+    <Compile Include="Design\LabelControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\MaskedTextControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\MatrixControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\RepeatControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ReportInfoLableDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\SimpleGroupDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\StatControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\VersionControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\HorizontalGridDesigner.cs" />
+    <Compile Include="DevExpressControls.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Editors\CalculateColumnEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\CalculateFieldTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\CalculateFieldTypeForm.Designer.cs">
+      <DependentUpon>CalculateFieldTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\CustomOrdersEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\FieldsGroupEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\PropertyEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Editors\ReFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\StringFormatEditor.cs" />
+    <Compile Include="Editors\ValuesColorEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExControl.cs" />
+    <Compile Include="ExShapeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FieldPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileNameControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigGradingGroupInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigGradingSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DF_GradingControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GradingPostionsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_HorizontalGridControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigHorizontalGridColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\GradingView.cs" />
+    <Compile Include="GridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GroupingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HitChartPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HorizonGroupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LabelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaskedTextControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MatrixControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RepeatControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportInfoLabelControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportInfoLable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimpleGroupingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StatControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Styles\StyleBuilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\ColumnSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigChartData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigChartExChartAxes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigChartExChartData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigChartExChartLengend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigChartExChartPieLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigChartExChartSeriesLabels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigChartExChartType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigChartInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigCompactGroupingInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigExControlStyle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigFieldPanelInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigFieldPanelLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigGridGroupInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigGridInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigGroupingInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigGroupingLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigHeaderConstructor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigHorizonGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigMaskedText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigMatrixInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigSimpleGroupingInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigStatInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DF_ChartControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_ChartControlEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_CompactGroupingControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_FieldPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_GridControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_GroupingControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_HorizonGroupControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_MaskedText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_MatrixControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_SimpleGroupingControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DF_StatControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExControlDesignerControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ExControlDesignerFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PaintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StyleBuilderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\CompactGroupView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ContainerControlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\CustomImageView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\DateTimeControlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ExShapeView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\FieldPanelView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\FileNameControlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\GridView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\GroupView.cs" />
+    <Compile Include="Views\HitChartPanelView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\HorizonGroupView.cs" />
+    <Compile Include="Views\LabelControlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MaskedTextControlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MatrixGroupView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\RepeatControlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ReportInfoLableView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\SimpleGroupView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\StatControlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\VersionControlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\View.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\WebbChartExView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\WebbChartView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\HorizontalGridView.cs" />
+    <Compile Include="WebbRepWizard\DataProvider\ConfigCoachCRMAccess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\DataProvider\ConfigDataSourceFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\DataProvider\ConfigVictoryAccess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\DataProvider\DataSourceWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\Data\Interop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\Data\ReportSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\Data\SpecialSummary.cs" />
+    <Compile Include="WebbRepWizard\Data\AdvUserInfo.cs" />
+    <Compile Include="WebbRepWizard\Data\WizardReportHeaderInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\Data\WizardStyles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\UserControl\CheckedSummaryItemListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\UserControl\CheckedSummaryItemListBox.Designer.cs">
+      <DependentUpon>CheckedSummaryItemListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebbRepWizard\UserControl\CustomPrintControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\UserControl\CustomSummaryCheckedItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\UserControl\CustomSummaryCheckedItem.Designer.cs">
+      <DependentUpon>CustomSummaryCheckedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebbRepWizard\UserControl\RectARP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\UserControl\WebbPageDataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\UserControl\WizardHeaderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebbRepWizard\UserControl\WizardPageControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebbTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HorizontalGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Content Include="Bitmaps\01.ico" />
+    <Content Include="Bitmaps\bottom.bmp" />
+    <EmbeddedResource Include="Bitmaps\HorizonGroup.bmp" />
+    <EmbeddedResource Include="Bitmaps\GradingControl.bmp" />
+    <Content Include="Bitmaps\left.bmp" />
+    <Content Include="Bitmaps\right.bmp" />
+    <Content Include="Bitmaps\top.bmp" />
+    <None Include="Resources\l2.bmp" />
+    <None Include="Resources\bgExtend.JPG" />
+    <None Include="Resources\bgcompress.JPG" />
+    <EmbeddedResource Include="Bitmaps\bars.png" />
+    <EmbeddedResource Include="Bitmaps\Chart.bmp" />
+    <EmbeddedResource Include="Bitmaps\container.bmp" />
+    <EmbeddedResource Include="Bitmaps\Curve.bmp" />
+    <EmbeddedResource Include="Bitmaps\DashLine.bmp" />
+    <EmbeddedResource Include="Bitmaps\datenavigator.bmp" />
+    <EmbeddedResource Include="Bitmaps\Ellipse.bmp" />
+    <EmbeddedResource Include="Bitmaps\Eraser.bmp" />
+    <EmbeddedResource Include="Bitmaps\FileName.bmp" />
+    <EmbeddedResource Include="Bitmaps\FillEllipse.bmp" />
+    <EmbeddedResource Include="Bitmaps\FillRectangle.bmp" />
+    <EmbeddedResource Include="Bitmaps\Group.bmp" />
+    <EmbeddedResource Include="Bitmaps\GroupControl.bmp" />
+    <EmbeddedResource Include="Bitmaps\HitChart.bmp" />
+    <EmbeddedResource Include="Bitmaps\Image.bmp" />
+    <EmbeddedResource Include="Bitmaps\Label.bmp" />
+    <EmbeddedResource Include="Bitmaps\Line.bmp" />
+    <EmbeddedResource Include="Bitmaps\lines.png" />
+    <EmbeddedResource Include="Bitmaps\List.bmp" />
+    <EmbeddedResource Include="Bitmaps\MatrixControl.bmp" />
+    <EmbeddedResource Include="Bitmaps\pie.png" />
+    <EmbeddedResource Include="Bitmaps\Rectangle.bmp" />
+    <EmbeddedResource Include="Bitmaps\RepeatControl.bmp" />
+    <EmbeddedResource Include="Bitmaps\SignedLabel.bmp" />
+    <EmbeddedResource Include="Bitmaps\Stat.bmp" />
+    <EmbeddedResource Include="Bitmaps\TreeIcon_Group.bmp" />
+    <EmbeddedResource Include="Bitmaps\TreeIcon_Group_Selected.bmp" />
+    <EmbeddedResource Include="Bitmaps\TreeIcon_Summary.bmp" />
+    <EmbeddedResource Include="Bitmaps\TreeIcon_Summary_Selected.bmp" />
+    <EmbeddedResource Include="Bitmaps\Version.bmp" />
+    <EmbeddedResource Include="Bitmaps\weekDaysEdit.bmp" />
+    <EmbeddedResource Include="Bitmaps\XRPanel.bmp" />
+    <EmbeddedResource Include="Bitmaps\XRShape.bmp" />
+    <EmbeddedResource Include="Cursors\Draw_Circle.cur" />
+    <EmbeddedResource Include="Cursors\Draw_Eraser.cur" />
+    <EmbeddedResource Include="Cursors\Draw_Line.cur" />
+    <EmbeddedResource Include="Cursors\Draw_Rectangle.cur" />
+    <EmbeddedResource Include="Editors\CalculateColumnEditor.resx">
+      <DependentUpon>CalculateColumnEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\CalculateFieldTypeForm.resx">
+      <DependentUpon>CalculateFieldTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\CustomOrdersEditor.resx">
+      <DependentUpon>CustomOrdersEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FieldsGroupEditor.resx">
+      <DependentUpon>FieldsGroupEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\ReFilterEditor.resx">
+      <DependentUpon>ReFilterEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\ValuesColorEditor.resx">
+      <DependentUpon>ValuesColorEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ColumnSetupForm.resx">
+      <DependentUpon>ColumnSetupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigChartData.resx">
+      <DependentUpon>ConfigChartData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigChartExChartAxes.resx">
+      <DependentUpon>ConfigChartExChartAxes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigChartExChartData.resx">
+      <DependentUpon>ConfigChartExChartData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigChartExChartLengend.resx">
+      <DependentUpon>ConfigChartExChartLengend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigChartExChartPieLabel.resx">
+      <DependentUpon>ConfigChartExChartPieLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigChartExChartSeriesLabels.resx">
+      <DependentUpon>ConfigChartExChartSeriesLabels.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigChartExChartType.resx">
+      <DependentUpon>ConfigChartExChartType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigChartInfo.resx">
+      <DependentUpon>ConfigChartInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigCompactGroupingInfo.resx">
+      <DependentUpon>ConfigCompactGroupingInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigExControlStyle.resx">
+      <DependentUpon>ConfigExControlStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigFieldPanelInfo.resx">
+      <DependentUpon>ConfigFieldPanelInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigFieldPanelLayout.resx">
+      <DependentUpon>ConfigFieldPanelLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigGradingGroupInfo.resx">
+      <DependentUpon>ConfigGradingGroupInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigGradingSection.resx">
+      <DependentUpon>ConfigGradingSection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigGridGroupInfo.resx">
+      <DependentUpon>ConfigGridGroupInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigGridInfo.resx">
+      <DependentUpon>ConfigGridInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigGroupingInfo.resx">
+      <DependentUpon>ConfigGroupingInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigGroupingLayout.resx">
+      <DependentUpon>ConfigGroupingLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigHeaderConstructor.resx">
+      <DependentUpon>ConfigHeaderConstructor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigHorizonGroup.resx">
+      <DependentUpon>ConfigHorizonGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigMaskedText.resx">
+      <DependentUpon>ConfigMaskedText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigMatrixInfo.resx">
+      <DependentUpon>ConfigMatrixInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigSimpleGroupingInfo.resx">
+      <DependentUpon>ConfigSimpleGroupingInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigStatInfo.resx">
+      <DependentUpon>ConfigStatInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_ChartControl.resx">
+      <DependentUpon>DF_ChartControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_ChartControlEx.resx">
+      <DependentUpon>DF_ChartControlEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_CompactGroupingControl.resx">
+      <DependentUpon>DF_CompactGroupingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_FieldPanel.resx">
+      <DependentUpon>DF_FieldPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_GradingControl.resx">
+      <DependentUpon>DF_GradingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_GridControl.resx">
+      <DependentUpon>DF_GridControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_GroupingControl.resx">
+      <DependentUpon>DF_GroupingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_HorizonGroupControl.resx">
+      <DependentUpon>DF_HorizonGroupControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_MaskedText.resx">
+      <DependentUpon>DF_MaskedText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_MatrixControl.resx">
+      <DependentUpon>DF_MatrixControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_SimpleGroupingControl.resx">
+      <DependentUpon>DF_SimpleGroupingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_StatControl.resx">
+      <DependentUpon>DF_StatControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExControlDesignerControlBase.resx">
+      <DependentUpon>ExControlDesignerControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExControlDesignerFormBase.resx">
+      <DependentUpon>ExControlDesignerFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GradingPostionsEditForm.resx">
+      <DependentUpon>GradingPostionsEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PaintForm.resx">
+      <DependentUpon>PaintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StyleBuilderForm.resx">
+      <DependentUpon>StyleBuilderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DF_HorizontalGridControl.resx">
+      <DependentUpon>DF_HorizontalGridControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigHorizontalGridColumn.resx">
+      <DependentUpon>ConfigHorizontalGridColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\DataProvider\ConfigCoachCRMAccess.resx">
+      <DependentUpon>ConfigCoachCRMAccess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\DataProvider\ConfigDataSourceFile.resx">
+      <DependentUpon>ConfigDataSourceFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\DataProvider\ConfigVictoryAccess.resx">
+      <DependentUpon>ConfigVictoryAccess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\DataProvider\DataSourceWizard.resx">
+      <DependentUpon>DataSourceWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\UserControl\CheckedSummaryItemListBox.resx">
+      <DependentUpon>CheckedSummaryItemListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\UserControl\CustomPrintControl.resx">
+      <DependentUpon>CustomPrintControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\UserControl\CustomSummaryCheckedItem.resx">
+      <DependentUpon>CustomSummaryCheckedItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\UserControl\RectARP.resx">
+      <DependentUpon>RectARP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\UserControl\WebbPageDataGrid.resx">
+      <DependentUpon>WebbPageDataGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\UserControl\WizardHeaderControl.resx">
+      <DependentUpon>WizardHeaderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebbRepWizard\UserControl\WizardPageControlBase.resx">
+      <DependentUpon>WizardPageControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

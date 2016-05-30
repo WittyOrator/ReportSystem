@@ -1,0 +1,144 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{222F6B84-9F65-4DAB-A4D7-75445C625326}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Resource1</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Resource1</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Common\Components\dataman32.dll" />
+    <Content Include="Common\Components\deviceman32.dll" />
+    <Content Include="Common\Components\MoviePlayerAx.DLL" />
+    <Content Include="Common\Components\WQPActive.ocx" />
+    <Content Include="Common\Components\WQPACTIVELib.dll" />
+    <Content Include="Common\DataProviderTitle .jpg" />
+    <Content Include="Common\MainTitle .jpg" />
+    <Content Include="Common\Setup.jpg" />
+    <Content Include="Common\WebbReport.ico" />
+    <Content Include="DevExpressLibrary\DevExpress.Data.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.Utils.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.Xpo.v6.3.Design.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.Xpo.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraBars.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraCharts.v6.3.Design.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraCharts.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraCharts.v6.3.UI.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraEditors.v6.3.Design.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraEditors.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraGrid.v6.3.Design.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraGrid.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraNavBar.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraPivotGrid.v6.3.Core.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraPivotGrid.v6.3.Design.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraPivotGrid.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraPrinting.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraReports.v6.3.Design.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraReports.v6.3.dll" />
+    <Content Include="DevExpressLibrary\DevExpress.XtraRichTextEdit.v6.3.dll" />
+    <None Include="Common\Components\Reg.bat" />
+    <None Include="Common\Components\WebbSource.ax" />
+    <None Include="Common\StrongKey.snk" />
+    <None Include="Common\Victory.mdb" />
+    <None Include="UML\DevExpress Library 6.35\DevExpress Library 6.35.oob" />
+    <None Include="UML\DevExpress Library 6.35\DevExpress Library 6.35.oom" />
+    <None Include="UML\MS.Net Framwork 1.1\MS.Net Framework 1.1.oob" />
+    <None Include="UML\MS.Net Framwork 1.1\MS.Net Framework 1.1.oom" />
+    <None Include="UML\Webb Report System\User case for Webb Report.oob" />
+    <None Include="UML\Webb Report System\User case for Webb Report.oom" />
+    <None Include="UML\Webb Report System\Webb.oob" />
+    <None Include="UML\Webb Report System\Webb.oom" />
+    <None Include="UML\Webb Report System\Webb.Reports.Browser.oob" />
+    <None Include="UML\Webb Report System\Webb.Reports.Browser.oom" />
+    <None Include="UML\Webb Report System\Webb.Reports.Designer.oob" />
+    <None Include="UML\Webb Report System\Webb.Reports.Designer.oom" />
+    <None Include="UML\Webb Report System\Webb.Reports.ExControls.oob" />
+    <None Include="UML\Webb Report System\Webb.Reports.ExControls.oom" />
+    <None Include="UML\Webb Report System\Webb.Reports.oob" />
+    <None Include="UML\Webb Report System\Webb.Reports.oom" />
+    <None Include="UML\Webb Report System\Webb.Reports.Tools.ReportRunner.oob" />
+    <None Include="UML\Webb Report System\Webb.Reports.Tools.ReportRunner.oom" />
+    <None Include="UML\Webb Report System\Webb.Reports.Tools.TemplateManager.oob" />
+    <None Include="UML\Webb Report System\Webb.Reports.Tools.TemplateManager.oom" />
+    <None Include="UML\Webb Report System\Webb.Reports.VideoPlayer.oob" />
+    <None Include="UML\Webb Report System\Webb.Reports.VideoPlayer.oom" />
+    <None Include="UML\Webb Report System\WebbReport Requirements.rqb" />
+    <None Include="UML\Webb Report System\WebbReport Requirements.rqm" />
+    <None Include="UML\Webb Reports.sws" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DBWebbAdvantage" targetNamespace="http://tempuri.org/WebbAdvantageDB.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/WebbAdvantageDB.xsd" xmlns:mstns="http://tempuri.org/WebbAdvantageDB.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DBWebbAdvantage" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Games">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ScoutTypeID" type="xs:int" />
+							<xs:element name="GameHdrVersion" type="xs:string" minOccurs="0" />
+							<xs:element name="TreeDisplayColor" type="xs:int" minOccurs="0" />
+							<xs:element name="MatchID" type="xs:int" />
+							<xs:element name="GameID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="Object" type="xs:string" />
+							<xs:element name="Opponent" type="xs:string" />
+							<xs:element name="Date" type="xs:string" />
+							<xs:element name="Location" type="xs:string" />
+							<xs:element name="FolderID" type="xs:int" minOccurs="0" />
+							<xs:element name="AccessTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DropIn" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DropUser" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Filters">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FilterID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="FilterName" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FilterDetails">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FilterID" type="xs:int" />
+							<xs:element name="FieldName" type="xs:string" />
+							<xs:element name="ValueName" type="xs:string" />
+							<xs:element name="Operator" type="xs:int" minOccurs="0" />
+							<xs:element name="Operand" type="xs:int" />
+							<xs:element name="SeqNum" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Fields">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FieldID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="FieldName" type="xs:string" />
+							<xs:element name="ShortName" type="xs:string" minOccurs="0" />
+							<xs:element name="Priority" type="xs:string" minOccurs="0" />
+							<xs:element name="ValueType" type="xs:int" />
+							<xs:element name="UserDefinable" type="xs:boolean" />
+							<xs:element name="UserDefinableCutup" type="xs:boolean" />
+							<xs:element name="UserChangeable" type="xs:boolean" />
+							<xs:element name="FieldLength" type="xs:int" />
+							<xs:element name="FieldEnabled" type="xs:boolean" />
+							<xs:element name="UsedAsFamily" type="xs:boolean" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="Sorted" type="xs:boolean" />
+							<xs:element name="KeyWord" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DBWebbAdvantageKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Games" />
+			<xs:field xpath="mstns:GameID" />
+		</xs:unique>
+		<xs:unique name="DBWebbAdvantageKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Filters" />
+			<xs:field xpath="mstns:FilterID" />
+		</xs:unique>
+		<xs:unique name="DBWebbAdvantageKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:FilterDetails" />
+			<xs:field xpath="mstns:FilterID" />
+			<xs:field xpath="mstns:SeqNum" />
+		</xs:unique>
+		<xs:keyref name="FiltersFilterDetails" refer="DBWebbAdvantageKey2">
+			<xs:selector xpath=".//mstns:FilterDetails" />
+			<xs:field xpath="mstns:FilterID" />
+		</xs:keyref>
+		<xs:unique name="DBWebbAdvantageKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Fields" />
+			<xs:field xpath="mstns:FieldID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

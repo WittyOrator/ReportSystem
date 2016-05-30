@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE ExControls [
+  <!ELEMENT ExControl ANY>
+  <!ATTLIST ExControl Type ID #REQUIRED>
+]>
+<ExControls>
+	<ExControl Type = "Webb.Reports.ExControls.LabelControl">
+		<Name>Label</Name>
+		<Width>150</Width>
+		<Height>50</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.DateTimeControl">
+		<Name>Date</Name>
+		<Width>150</Width>
+		<Height>50</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.VersionControl">
+		<Name>Version</Name>
+		<Width>150</Width>
+		<Height>50</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.FileNameControl">
+		<Name>FileName</Name>
+		<Width>150</Width>
+		<Height>50</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.ReportInfoLabel">
+		<Name>Games List Info</Name>
+		<Width>300</Width>
+		<Height>120</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.CustomImage">
+		<Name>Image</Name>
+		<Width>200</Width>
+		<Height>200</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.GridControl">
+		<Name>Grid Control</Name>
+		<Width>200</Width>
+		<Height>200</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.GroupingControl">
+		<Name>Group Control</Name>
+		<Width>200</Width>
+		<Height>200</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.FieldPanel">
+		<Name>Hit Chart Control</Name>
+		<Width>200</Width>
+		<Height>200</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.StatControl">
+		<Name>Statistical Control</Name>
+		<Width>200</Width>
+		<Height>200</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+	<ExControl Type = "Webb.Reports.ExControls.ChartControl">
+		<Name>Chart Control</Name>
+		<Width>500</Width>
+		<Height>400</Height>
+		<Category>Extended Controls</Category>
+	</ExControl>
+</ExControls>

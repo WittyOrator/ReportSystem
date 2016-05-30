@@ -1,0 +1,1 @@
+"Path:E:\SM017a Def  Play by Play 12-02-2007new.repx" "Action:Demo" "Product:WebbAdvantageFootball" "DBConn:" "SQLCmd:" "GameIDs:" "EdlIDs:" "FilterIDs:" "Files:E:\AFCA\Imported Games\NOS O VS ATL D ON 11-16-03 AT Superdome-Offensive Self.exp" "Print:0"

@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C62E8739-2832-4CB1-ACEC-D9100B56093D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Webb.Reports</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Webb.Reports</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Webb.Reports/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v6.3, Version=6.3.3.0, Culture=neutral, PublicKeyToken=9be245af2725da3c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.Data.v6.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v6.3">
+      <Name>DevExpress.Utils.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.Utils.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v6.3">
+      <Name>DevExpress.XtraBars.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraBars.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v6.3">
+      <Name>DevExpress.XtraEditors.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraEditors.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v6.3">
+      <Name>DevExpress.XtraNavBar.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraNavBar.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v6.3">
+      <Name>DevExpress.XtraPrinting.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraPrinting.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v6.3">
+      <Name>DevExpress.XtraReports.v6.3</Name>
+      <HintPath>..\Resource\DevExpressLibrary\DevExpress.XtraReports.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Webb.Playbook.Geometry, Version=0.1.9.1, Culture=neutral, PublicKeyToken=9be245af2725da3c, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\打包必备3.5\WebbRepWizard\Webb.Playbook.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="WEBBGAMEDATALib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9be245af2725da3c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\打包必备3.5\WebbRepWizard\WEBBGAMEDATALib.dll</HintPath>
+    </Reference>
+    <Reference Include="WEBBSHAREMEMORYLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9be245af2725da3c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\打包必备3.5\WebbRepWizard\WEBBSHAREMEMORYLib.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\Webb\Util.csproj">
+      <Name>Util</Name>
+      <Project>{4CB0299D-E4FE-4509-BBFB-2E42C426F7DE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdvGameData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnalyImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Browser\ReportBrowserBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigPlayBookData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\FieldSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\FieldSelectForm.Designer.cs">
+      <DependentUpon>FieldSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\PlayerGradingFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\SectionGroupFilterEditr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\SectionGroupFilterEditr.Designer.cs">
+      <DependentUpon>SectionGroupFilterEditr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebbReportTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\AdvantageFilterHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\DBSourceConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigStepCCRMData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigStepCCRMData.Designer.cs">
+      <DependentUpon>ConfigStepCCRMData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProvider\DBWebbAdvantage.cs">
+      <DependentUpon>DBWebbAdvantage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataProvider\DBWebbAdvantage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBWebbAdvantage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataProvider\DBWebbCommon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBWebbCommon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataProvider\DBWebbVictory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBWebbVictory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataProvider\UI\AdvReportFilterSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\AdvReportSectionFiltersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigAdvDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigAdvFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigCommonAccess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigCommonSQL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigComonTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigDBCatalog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigDBFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigDBTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigFields.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigFilters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigGames.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ConfigTables.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\CustomSectionFiltersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\DataSourcePreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\DBConfigWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\FilterSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\FrmExpression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\FrmTableExpression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\GameSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\MyRelationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\ReportTemplateSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\SectionFilterSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\SectionFilterSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataProvider\UI\TableExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\VideoInfo.cs" />
+    <Compile Include="DataProvider\VictoryFilterHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\VideoPlayBackManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\WebbDataProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Editors\AdvUserEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\AngleEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\DBFilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\DiaImageEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Editors\FormatDateTimeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\PageGroupEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\SectionFiltersEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\SidesEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\SortingColumnEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\TextFormatEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Editors\UserRightEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\WebbReportTemplateEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterForms\EditFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterForms\EditSecFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupDescription.cs" />
+    <Compile Include="InwManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PageGroupData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDesigner\DesignerConfigation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportDesigner\ReportDesignerBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportManager\ReportManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportManager\UI\ReportSelectorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportManager\UI\ReportSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportWizardSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SerilizeWatermarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebbReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="wmksFileManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Browser\ReportBrowserBase.resx">
+      <DependentUpon>ReportBrowserBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\AdvReportFilterSelector.resx">
+      <DependentUpon>AdvReportFilterSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\AdvReportSectionFiltersForm.resx">
+      <DependentUpon>AdvReportSectionFiltersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigAdvDB.resx">
+      <DependentUpon>ConfigAdvDB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigAdvFile.resx">
+      <DependentUpon>ConfigAdvFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigPlayBookData.resx">
+      <DependentUpon>ConfigPlayBookData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigStepCCRMData.resx">
+      <DependentUpon>ConfigStepCCRMData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigCommonAccess.resx">
+      <DependentUpon>ConfigCommonAccess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigCommonSQL.resx">
+      <DependentUpon>ConfigCommonSQL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigComonTable.resx">
+      <DependentUpon>ConfigComonTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigDBCatalog.resx">
+      <DependentUpon>ConfigDBCatalog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigDBFile.resx">
+      <DependentUpon>ConfigDBFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigDBTypes.resx">
+      <DependentUpon>ConfigDBTypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigFields.resx">
+      <DependentUpon>ConfigFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigFilters.resx">
+      <DependentUpon>ConfigFilters.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigGames.resx">
+      <DependentUpon>ConfigGames.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ConfigTables.resx">
+      <DependentUpon>ConfigTables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\CustomSectionFiltersForm.resx">
+      <DependentUpon>CustomSectionFiltersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\DataSourcePreviewForm.resx">
+      <DependentUpon>DataSourcePreviewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\DBConfigWizardForm.resx">
+      <DependentUpon>DBConfigWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\FilterSelectorForm.resx">
+      <DependentUpon>FilterSelectorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\FrmExpression.resx">
+      <DependentUpon>FrmExpression.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\FrmTableExpression.resx">
+      <DependentUpon>FrmTableExpression.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\GameSelectorForm.resx">
+      <DependentUpon>GameSelectorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\MyRelationControl.resx">
+      <DependentUpon>MyRelationControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\ReportTemplateSelector.resx">
+      <DependentUpon>ReportTemplateSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\SectionFilterSelector.resx">
+      <DependentUpon>SectionFilterSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataProvider\UI\SectionFilterSelectorForm.resx">
+      <DependentUpon>SectionFilterSelectorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\AdvUserEditor.resx">
+      <DependentUpon>AdvUserEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\AngleEditor.resx">
+      <DependentUpon>AngleEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\DBFilterEditor.resx">
+      <DependentUpon>DBFilterEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FieldSelectForm.resx">
+      <DependentUpon>FieldSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\FormatDateTimeEditor.resx">
+      <DependentUpon>FormatDateTimeEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\PageGroupEditor.resx">
+      <DependentUpon>PageGroupEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\SectionFiltersEditor.resx">
+      <DependentUpon>SectionFiltersEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\SectionGroupFilterEditr.resx">
+      <DependentUpon>SectionGroupFilterEditr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\SidesEditor.resx">
+      <DependentUpon>SidesEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\SortingColumnEditor.resx">
+      <DependentUpon>SortingColumnEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\TextFormatEditor.resx">
+      <DependentUpon>TextFormatEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\UserRightEditor.resx">
+      <DependentUpon>UserRightEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\WebbReportTemplateEditor.resx">
+      <DependentUpon>WebbReportTemplateEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterForms\EditFilterForm.resx">
+      <DependentUpon>EditFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterForms\EditSecFilterForm.resx">
+      <DependentUpon>EditSecFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDesigner\ReportDesignerBase.resx">
+      <DependentUpon>ReportDesignerBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportManager\UI\ReportSelectorControl.resx">
+      <DependentUpon>ReportSelectorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportManager\UI\ReportSelectorForm.resx">
+      <DependentUpon>ReportSelectorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerilizeWatermarkForm.resx">
+      <DependentUpon>SerilizeWatermarkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="DataProvider\DBWebbAdvantage.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBWebbAdvantage.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataProvider\DBWebbCommon.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBWebbCommon.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataProvider\DBWebbVictory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBWebbVictory.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataProvider\DBWebbAdvantage.xsc">
+      <DependentUpon>DBWebbAdvantage.xsd</DependentUpon>
+    </None>
+    <None Include="DataProvider\DBWebbAdvantage.xss">
+      <DependentUpon>DBWebbAdvantage.xsd</DependentUpon>
+    </None>
+    <None Include="DataProvider\DBWebbAdvantage.xsx">
+      <DependentUpon>DBWebbAdvantage.xsd</DependentUpon>
+    </None>
+    <None Include="DataProvider\DBWebbCommon.xsc">
+      <DependentUpon>DBWebbCommon.xsd</DependentUpon>
+    </None>
+    <None Include="DataProvider\DBWebbCommon.xsx">
+      <DependentUpon>DBWebbCommon.xsd</DependentUpon>
+    </None>
+    <None Include="DataProvider\DBWebbVictory.xsc">
+      <DependentUpon>DBWebbVictory.xsd</DependentUpon>
+    </None>
+    <None Include="DataProvider\DBWebbVictory.xsx">
+      <DependentUpon>DBWebbVictory.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,1 @@
+"$(SolutionDir)Resource\SignTool\signtool.exe" sign /f "$(SolutionDir)Resource\SignTool\WebbSign.pfx" /d "Webb Report Wizard" /p "Webb1410" $(TargetPath)

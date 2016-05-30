@@ -1,0 +1,10 @@
+;The comment below contains SFX script commands
+Path=C:\Program Files\Webb Electronics\
+PreSetup="C:\Program Files\Webb Electronics\Interactive Report\Remove_Old_Report.bat"
+Setup=regedit /s "C:\Program Files\Webb Electronics\Interactive Report\WebbReportBrowser.reg"
+Setup="C:\Program Files\Webb Electronics\Interactive Report\RegReport.vbs"
+Silent=2
+Overwrite=1
+Title=Webb Report Installer
+;The comment below for designer
+;Shortcut=D, "C:\Program Files\Webb Electronics\Interactive Report\WebbRepBrowser.exe","", "Webb Report Browser", "WebbReportBrowser"
